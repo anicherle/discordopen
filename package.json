@@ -1,0 +1,22 @@
+{
+  "name": "bot_discord",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "author": "Tiago Gonçalves",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^1.0.0",
+    "axios": "^0.27.2",
+    "cross-env": "^7.0.3",
+    "discord-api-types": "^0.36.2",
+    "discord.js": "^14.0.3",
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.19"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/commands/registerCommand.js && node src/server.js",
+    "dc-registerCommands": "node src/commands/registerCommand.js"
+  }
+}
